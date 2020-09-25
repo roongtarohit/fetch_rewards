@@ -30,7 +30,7 @@ Pyramid consists only letters i.e lowercase and uppercase alphabets. Any other c
 The base URL of the service is ``` /api/v1/pyramid ``` and it supports both GET and POST request.
 ### HTTP Methods
 #### GET Request (Path Variable)
-Spring @PathVariable tutorial shows how to read a URL template variable with @PathVariable annotation. <sup>[1]/sup> [Link](http://zetcode.com/spring/pathvariable/)
+Spring @PathVariable tutorial shows how to read a URL template variable with @PathVariable annotation. <sup>[1]</sup> [Link](http://zetcode.com/spring/pathvariable/)
 
 - Syntax: ``` http://localhost:8080/api/v1/pyramid/{word} ```
    - Example: ``` http://localhost:8080/api/v1/pyramid/{banana} ```
