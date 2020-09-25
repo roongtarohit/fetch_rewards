@@ -13,13 +13,20 @@ public class Pyramid {
 
     public Pyramid(final String word) {
         this.word = word;
+        this.error = "";
     }
 
+    // GENERATING JSON STRING
     @Override
     public String toString() {
-        return String.format("%s#%s#%s", word, result, error);
+        return "{" +
+                "\"word\":\"" + word + '\"' +
+                ",\"result\":" + result +
+                ",\"error\":\"" + error + '\"' +
+                '}';
     }
 
+    // GENERATING HASH CODE
     @Override
     public int hashCode() {
         final int booleanValue = (result)?31:63;

@@ -20,6 +20,12 @@ public class PyramidServiceTest {
     }
 
     @Test
+    public void Pyramid_ReturnsTrue_OnMixingLetterCaseValidInput() throws PyramidException {
+        PyramidService subject = new PyramidService("  DaNdaNanBn ");
+        assertTrue(subject.isPyramid());
+    }
+
+    @Test
     public void Pyramid_ReturnsFalse_OnInvalidInput() throws PyramidException {
         PyramidService subject = new PyramidService("bandana");
         assertFalse(subject.isPyramid());
