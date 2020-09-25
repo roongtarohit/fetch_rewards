@@ -79,5 +79,7 @@ Spring @PathVariable tutorial shows how to read a URL template variable with @Pa
 
 ![Post Request](https://github.com/roongtarohit/fetch_rewards/blob/master/imgs/postRequest.png)
 
+#### Code Explanation [Link](https://github.com/roongtarohit/fetch_rewards/wiki/Code-Explanation)
+
 ## REFERENCES
 1. http://zetcode.com/spring/pathvariable/
