@@ -28,27 +28,8 @@ A java web service that accepts a string as input and return a response indicati
 Pyramid consists only letters i.e lowercase and uppercase alphabets. Any other character would be considered as an invalid input. It means the word can't contain any number or special characters.
 
 The base URL of the service is ``` /api/v1/pyramid ``` and it supports both GET and POST request.
-### HTTP Methods
-#### GET Request (Path Variable)
-Spring @PathVariable tutorial shows how to read a URL template variable with @PathVariable annotation. <sup>[1]</sup> [Link](http://zetcode.com/spring/pathvariable/)
 
-- Syntax: ``` http://localhost:8080/api/v1/pyramid/{word} ```
-   - Example: ``` http://localhost:8080/api/v1/pyramid/{banana} ```
-   - Example: ``` http://localhost:8080/api/v1/pyramid/{bandana} ```
-
-#### GET Request 
-
-- Syntax: ``` http://localhost:8080/api/v1/pyramid?word={word} ```
-   - Example: ``` http://localhost:8080/api/v1/pyramid?word={banana} ```
-   - Example: ``` http://localhost:8080/api/v1/pyramid?word={bandana} ```
-
-#### POST Request
-
-1. POST URL: ``` http://localhost:8080/api/v1/pyramid ```
-2. Content-Type: PlainText
-3. Request Body: Input word string
-
-### Response Object
+### Response Object (Output)
 
 The response JSON objects consists of three values pair. 
 1. word: Indicates the input string.
@@ -71,5 +52,32 @@ The response JSON objects consists of three values pair.
     "error": "INVALID INPUT"
 }
 ```
+
+### HTTP Methods
+#### GET Request (Path Variable)
+Spring @PathVariable tutorial shows how to read a URL template variable with @PathVariable annotation. <sup>[1]</sup> [Link](http://zetcode.com/spring/pathvariable/)
+
+- Syntax: ``` http://localhost:8080/api/v1/pyramid/{word} ```
+   - Example: ``` http://localhost:8080/api/v1/pyramid/{banana} ```
+   - Example: ``` http://localhost:8080/api/v1/pyramid/{bandana} ```
+
+![Path Variable](https://github.com/roongtarohit/fetch_rewards/blob/master/imgs/pathVariableRequest.png)
+
+#### GET Request 
+
+- Syntax: ``` http://localhost:8080/api/v1/pyramid?word={word} ```
+   - Example: ``` http://localhost:8080/api/v1/pyramid?word={banana} ```
+   - Example: ``` http://localhost:8080/api/v1/pyramid?word={bandana} ```
+ 
+![Get Request](https://github.com/roongtarohit/fetch_rewards/blob/master/imgs/getRequest.png)
+
+#### POST Request
+
+1. POST URL: ``` http://localhost:8080/api/v1/pyramid ```
+2. Content-Type: PlainText
+3. Request Body: Input word string
+
+![Post Request](https://github.com/roongtarohit/fetch_rewards/blob/master/imgs/postRequest.png)
+
 ## REFERENCES
 1. http://zetcode.com/spring/pathvariable/
